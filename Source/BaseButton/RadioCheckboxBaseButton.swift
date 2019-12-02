@@ -30,10 +30,8 @@ public class RadioCheckboxBaseButton: UIButton {
     /// Keep the track of Selection and deselction
     @objc dynamic public var isOn = false {
         didSet {
-            if isOn != oldValue {
-                updateSelectionState()
-                callDelegate()
-            }
+            updateSelectionState()
+            callDelegate()
         }
     }
     
