@@ -74,7 +74,7 @@ public class RadioCheckboxBaseButton: UIButton {
         // If toggle enable, change selection state
         if allowDeselection {
             isOn = !isOn
-        } else if !isOn {
+        } else {
             isOn = true
         }
     }
